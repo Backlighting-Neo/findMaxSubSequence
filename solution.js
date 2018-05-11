@@ -31,7 +31,7 @@ module.exports = function(array) {
   const isNegativeNumberEnd = processedArray[processedArray.length - 1] < 0;
 
   // 为负数则直接扔掉
-  processedArray = processedArray.slice(isNegativeNumberStart ? 1 : 0, );
+  processedArray = processedArray.slice(isNegativeNumberStart ? 1 : 0, processedArray.length - (isNegativeNumberEnd ?  1 : 0));
 
   let maxSummary = 0;
 
